@@ -1,0 +1,3 @@
+Diffusion scheduler is an experimental ODE framework and simulator of various
+process schedulers, compared to the experimental diffusion scheduling algorithm.
+See report as well.
