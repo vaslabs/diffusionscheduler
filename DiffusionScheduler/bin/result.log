@@ -1,0 +1,44 @@
+RANDOM SCHEDULING
+Loops: 20248
+Total time: 1365.4919999999527
+Total inactive time for each process
+-----------------
+
+Average: 848.1386119999804
+Total time for each process to be executed
+-----------------
+
+Average: 849.5041039999813
+ROUND ROBIN SCHEDULING
+Loops: 15220
+Total time: 1098.3219999999792
+Total inactive time for each process
+-----------------
+
+Average: 580.2404769999931
+Total time for each process to be executed
+-----------------
+
+Average: 581.3387989999927
+Priority SCHEDULING
+Loops: 19818
+Total time: 1364.4049999999559
+Total inactive time for each process
+-----------------
+
+Average: 684.9173399999838
+Total time for each process to be executed
+-----------------
+
+Average: 686.2817449999844
+DIFFUSION INSPIRED SCHEDULING
+Loops: 15268
+Total time: 1093.1655999999844
+Total inactive time for each process
+-----------------
+
+Average: 566.9630542999948
+Total time for each process to be executed
+-----------------
+
+Average: 568.056219899994

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#set gnuplot data for total time
+totalTimes=`java TestScheduler $1 | cat >result.log`
+totalTimes=`cat result.log | grep "Total time: " | cut -d ':' -f 2 | tr -d ' '`
+averages=`cat result.log | grep "Average: " | cut -d ':' -f 2 | tr -d ' '`
+avg_line1=`echo $averages | cut -d ' ' -f 1,3,5,7`
+avg_line2=`echo $averages | cut -d ' ' -f 2,4,6,8`
+total_time=`echo $totalTimes | cut -f 1-4`
+{
+echo "Time_mesure" `cat algorithms`
+echo "inactivity $avg_line1"
+echo "lifecycle $avg_line2"
+echo "total $total_time"
+} | cat >times_data.dat
+#gnuplot -p totalTime.p

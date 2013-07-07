@@ -1,0 +1,12 @@
+#!/bin/bash
+for ((i=$1; i <=$2; i+=$3)); do
+    ./run-test $i
+    gnuId=`pgrep gnuplot`
+    if [ -n "$gnuId" ]; then
+        kill $gnuId
+    fi
+    
+    gnuplot -geometry 1600x900 -display :0.0 -e "window_title='Processes: $i'" -p totalTime.p  
+    sleep 2
+done
+
